@@ -1,5 +1,5 @@
 import styles from './NavBar.module.css'
-import { NavLink } from 'react-router'
+import { NavLink, useNavigate } from 'react-router'
 import DashboardIcon from '../../assets/icons/dashboard.svg?react'
 import FinanceIcon from '../../assets/icons/finance.svg?react'
 import PoultryIcon from '../../assets/icons/poultry.svg?react'
@@ -10,8 +10,17 @@ import AddBtnIcon from '../../assets/icons/addBtn.svg?react'
 
 // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 const NavBar = () => {
+  const navigate = useNavigate()
+
   const user = JSON.parse(localStorage.getItem('user') || 'null')
   const isOwner = user?.role === 'Owner'
+
+  const handleLogout = () => {
+    localStorage.removeItem('token')
+    localStorage.removeItem('user')
+
+    navigate('/login')
+  }
 
   return (
     <nav>
@@ -21,14 +30,12 @@ const NavBar = () => {
             src={farmImg}
             alt='poultry logo' />
         </div>
-        <li><NavLink
-          to='/login'
-          className={({ isActive }) =>
-            isActive ? styles.activeLink : styles.navLink
-          }>
-          <LogoutBtn />
-          <span className={styles.navLabel}>Log Out</span>
-        </NavLink></li>
+        <li>
+          <div className={styles.navLink} onClick={handleLogout}>
+            <LogoutBtn />
+            <span className={styles.navLabel}>Log Out</span>
+          </div>
+        </li>
 
         {isOwner && (
           <li>
