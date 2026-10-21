@@ -1,0 +1,17 @@
+.pageArea {
+  min-width: 0;
+}
+
+.mainContent {
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .pageArea {
+    margin-left: 200px;
+  }
+
+  .mainContent {
+    padding-bottom: 0;
+  }
+}

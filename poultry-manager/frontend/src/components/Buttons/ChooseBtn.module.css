@@ -1,0 +1,25 @@
+.chooseBtn {
+  color: var(--primary-tint2);
+  background-color: var(--accent);
+  width: 100px;
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 0 var(--accent-shade), inset 0 0 0 var(--black-shade);
+  transition: transform 0.1s ease-in-out, background-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chooseBtn:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 var(--accent-shade);
+}
+
+.chooseBtn:active {
+  transform: translateY(4px);
+  box-shadow: 0 0px 0 var(--accent-shade), inset 0px 4px 8px var(--black-tint);
+}

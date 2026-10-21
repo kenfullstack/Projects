@@ -1,0 +1,31 @@
+.saveBtn {
+  color: var(--primary);
+  background-color: var(--accent);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 0 var(--accent-shade), inset 0 0 0 var(--black-shade);
+  transition: transform 0.1s ease-in-out, background-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.saveBtn:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 var(--accent-shade);
+}
+
+.saveBtn:active {
+  transform: translateY(4px);
+  box-shadow: 0 0px 0 var(--accent-shade), inset 0px 4px 8px var(--black-tint);
+}
+
+.saveBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: translateY(4px);
+  box-shadow: 0 0px 0 var(--accent-shade), inset 0px 4px 8px var(--black-tint);
+}

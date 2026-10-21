@@ -1,0 +1,22 @@
+.logoutBtn {
+  border: none;
+  color: var(--primary-tint2);
+  background-color: var(--accent);
+  border-radius: 5px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logoutBtn:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 var(--accent-shade);
+}
+
+.logoutBtn:active {
+  transform: translateY(4px);
+  box-shadow: 0 0px 0 var(--accent-shade), inset 0px 4px 8px var(--black-tint);
+}

@@ -1,0 +1,24 @@
+.editBtn {
+  height: 30px;
+  border: none;
+  color: var(--primary-tint2);
+  background-color: var(--accent);
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 5px 0 var(--accent-shade);
+}
+
+.editBtn:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 var(--accent-shade);
+}
+
+.editBtn:active {
+  transform: translateY(4px);
+  box-shadow: 0 0px 0 var(--accent-shade), inset 0px 4px 8px var(--black-tint);
+}

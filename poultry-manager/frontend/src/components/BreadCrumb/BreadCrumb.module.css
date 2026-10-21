@@ -1,0 +1,74 @@
+.breadCrumb {
+  height: 50px;
+  padding-left: 30px;
+  background-color: var(--tertiary);
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 15px var(--tertiary-shade);
+}
+
+.crumbText {
+  display: flex;
+  gap: 20px;
+}
+
+.breadCrumb p {
+  color: var(--primary-tint2);
+  font-size: 14px;
+}
+
+.currentPage {
+  color: var(--accent);
+}
+
+.pageTitle {
+  margin: 0;
+  color: var(--tertiary);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.music {
+  color: var(--primary-tint2);
+  background-color: var(--accent);
+  width: 34px;
+  height: 34px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 0 var(--accent-shade);
+  transition: transform 0.1s ease-in-out, background-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 3px;
+}
+
+.music:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 var(--accent-shade);
+}
+
+.music:active {
+  transform: translateY(4px);
+  box-shadow: 0 0px 0 var(--accent-shade)
+}
+
+@media (min-width: 768px) {
+  .breadCrumb {
+    margin-left: 198px;
+    border-left: 2px solid var(--tertiary-shade);
+  }
+
+  .music {
+    margin-right: 208px;
+  }
+}

@@ -1,0 +1,39 @@
+.wholeFormWrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 3% 5%;
+  box-shadow: 0 5px 15px var(--black-tint);
+}
+
+.formActions {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.errorMessages {
+  color: var(--accent);
+  background-color: var(--primary-tint2);
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  padding: 10px 16px;
+  margin-bottom: 20px;
+}
+
+.errorMessages p {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.errorMessages ul {
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.errorMessages li {
+  margin-bottom: 5px;
+}

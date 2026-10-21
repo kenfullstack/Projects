@@ -1,0 +1,188 @@
+.wholeFormWrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 3% 5%;
+  box-shadow: 0 5px 15px var(--black-tint);
+}
+
+.formInputs {
+  margin-top: 30px;
+}
+
+.calculatedTotal {
+  background-color: var(--secondary);
+  height: 70px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.subText {
+  color: var(--black-tint);
+}
+
+.mainText {
+  font-size: large;
+}
+
+/* TRANSACTION BUTTONS // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+.toggleBtnWrapper {
+  margin-top: 20px;
+}
+
+.toggleBtn1 {
+  display: flex;
+  gap: 17px;
+  align-items: flex-end;
+  height: 50px;
+  width: 100%;
+  font-size: small;
+}
+
+.toggleBtn2 {
+  display: flex;
+  gap: 25px;
+  align-items: flex-end;
+  height: 50px;
+  width: 100%;
+  font-size: small;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 150px;
+  height: 30px;
+}
+
+.transactionBtn {
+  color: var(--primary);
+  width: 90px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.1s ease;
+}
+
+.incomeInactive,
+.expenseInactive {
+  background-color: var(--accent);
+  box-shadow: 0 5px 0 var(--accent-shade);
+}
+
+.incomeInactive:hover,
+.expenseInactive:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 var(--accent-shade);
+}
+
+.incomeActive {
+  background-color: var(--true);
+  color: var(--primary);
+  box-shadow: 0 2px 0 var(--accent-shade);
+  transform: translateY(3px);
+}
+
+.incomeActive:hover {
+  cursor: pointer;
+}
+
+.expenseActive {
+  background-color: var(--false);
+  color: var(--primary);
+  box-shadow: 0 2px 0 var(--accent-shade);
+  transform: translateY(3px);
+}
+
+.expenseActive:hover {
+  cursor: pointer;
+}
+
+.paymentBtn {
+  color: var(--primary);
+  width: 90px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.1s ease;
+}
+
+.paidInactive,
+.pendingInactive {
+  background-color: var(--accent);
+  box-shadow: 0 5px 0 var(--accent-shade);
+}
+
+.paidInactive:hover,
+.pendingInactive:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 var(--accent-shade);
+}
+
+.paidActive {
+  background-color: var(--true);
+  color: var(--primary);
+  box-shadow: 0 2px 0 var(--accent-shade);
+  transform: translateY(3px);
+}
+
+.paidActive:hover {
+  cursor: pointer;
+}
+
+.pendingActive {
+  background-color: var(--false);
+  color: var(--primary);
+  box-shadow: 0 2px 0 var(--accent-shade);
+  transform: translateY(3px);
+}
+
+.pendingActive:hover {
+  cursor: pointer;
+}
+
+.formActions {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* ERRORS // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+.errorMessages {
+  color: var(--accent);
+  background-color: var(--primary-tint2);
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  padding: 10px 16px;
+  margin-bottom: 20px;
+}
+
+.errorMessages p {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.errorMessages ul {
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.errorMessages li {
+  margin-bottom: 5px;
+}
