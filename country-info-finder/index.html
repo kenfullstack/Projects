@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Country Info Finder Web Application</title>
+</head>
+
+<body>
+  <img class="country-bg" src="/country-info-finder/images/city-bg.png" alt="ai-generated pic of city">
+  <div class="title-bar">
+    <h1>Country Info Finder</h1>
+    <div class="tutorial">?</div>
+  </div>
+  <div class="flag-selector">
+    <svg class="left-arrow arrows" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#e2d6bc">
+      <path d="M560-280 360-480l200-200v400Z" />
+    </svg>
+    <div class="flag-slides" id="flag-container">
+      <img class="flag-img" id="flag-pic">
+    </div>
+    <svg class="right-arrow arrows" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#e2d6bc">
+      <path d="M400-280v-400l200 200-200 200Z" />
+    </svg>
+  </div>
+  <div class="country-name">
+    <h4></h4>
+  </div>
+  <div class="main-container">
+    <div class="info-container">
+      <div class="core">
+        <h5>Core Infos</h5>
+        <ul>
+          <li id="capital">Capital: </li>
+          <li id="region">Region: </li>
+          <li id="population">Population: </li>
+          <li id="currencies">Currencies: </li>
+          <li id="languages">Languages: </li>
+        </ul>
+      </div>
+      <div class="quick-facts">
+        <h5>Quick Facts</h5>
+        <ul>
+          <li id="area">Area: </li>
+          <li id="timezones">Timezones: </li>
+          <li id="calling-codes">Calling Codes: </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="chat-container">
+      <div class="chat-header">
+        <h5>Chat Bot</h5>
+      </div>
+      <div class="chat-area">
+
+      </div>
+      <div class="input-area">
+        <input type="text" id="user-message" name="userMessage" class="message-bar" placeholder="Type a message...">
+        <button class="send-btn">Send</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
